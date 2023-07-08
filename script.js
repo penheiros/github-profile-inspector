@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
             userRepos.innerHTML = `Public Repositories : ${data.public_repos}`;
             userBio.innerHTML = `Description : ${data.bio}`;
 
-            if (data.blog.value === "Un-available") {userBlog.innerHTML = `Website : <a href=${data.blog} target="_blank">${data.blog}</a>`;
+            if (data.blog.value != "Un-available") {userBlog.innerHTML = `Website : <a href=${data.blog} target="_blank">${data.blog}</a>`;
             } else {userBlog.innerHTML = `Website : ${data.blog}`}
         })
     
