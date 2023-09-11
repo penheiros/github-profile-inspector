@@ -8,32 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <form id="github-profile-form" autocomplete="off">
-            <h1 class="search-title">Inspect GitHub Profile</h1>
-            <input type="searchbox" class="search-box" id="search-username"
-            placeholder="Search Username" required>
-            <button class="search-button" id="submit-username">
-                Search User
-            </button>
-        </form>
-        <div id="result-box">
-            <h1 class="result-title">Results</h1>
-            <div id="result">
-                <div class="userinfo">
-                    <img id="user-avatar">
-                    <p id="user-name"></p>
-                    <a id="user-profile-link"></a>
+        <div class="box-container">
+            <form id="github-profile-form" autocomplete="off">
+                <h1 class="search-title">Inspect GitHub Profile</h1>
+                <input type="searchbox" class="search-box" id="search-username"
+                placeholder="Search Username" required>
+                <button class="search-button" id="submit-username">
+                    Search User
+                </button>
+            </form>
+            <div id="result-box">
+                <h1 class="result-title">Results</h1>
+                <div id="result">
+                    <div class="userinfo">
+                        <img id="user-avatar">
+                        <p id="user-name"></p>
+                        <a id="user-profile-link"></a>
+                    </div>
+                    <div class="userdetails">
+                        <p id="user-login-name"></p>
+                        <p id="user-followers"></p>
+                        <p id="user-location"></p>
+                        <p id="user-blog"></p>
+                        <p id="user-public-repositories"></p>
+                        <p id="user-bio"></p>
+                    </div>
                 </div>
-                <div class="userdetails">
-                    <p id="user-login-name"></p>
-                    <p id="user-followers"></p>
-                    <p id="user-location"></p>
-                    <p id="user-blog"></p>
-                    <p id="user-public-repositories"></p>
-                    <p id="user-bio"></p>
-                </div>
-            </div>
+            </div>            
         </div>
+        <footer class="copyright">copyright</footer>
     </div>
     <script src="script.js"></script>
 </body>

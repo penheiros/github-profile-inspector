@@ -24,8 +24,11 @@ a {
     align-items: center;
     position: fixed;
     left:0; right:0; bottom:0; top: 0;
-    gap: 15px;
     margin-bottom: 50px;
+} .box-container {
+    display: flex; justify-content: center; 
+    align-items: center;
+    gap: 15px;
 }
 #github-profile-form {
     display: flex; flex-direction: column;
@@ -94,3 +97,8 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
     background-color: rgb(84, 150, 237);
 }
 
+.copyright {
+    position:absolute;
+    bottom: 0;
+    color: white;
+}

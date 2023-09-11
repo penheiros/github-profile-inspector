@@ -1,6 +1,4 @@
 var form = document.getElementById("github-profile-form")
-
-
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -22,7 +20,7 @@ form.addEventListener('submit', function(event) {
     fetch(`https://api.github.com/users/${validatedName}`)
         .then(result => result.json())
         .then(data => {
-            for (key in data) {if(data[key] == null || data[key].length === 0) {data[key] = "Un-available"}}
+            for (key in data) {if(data[key] == null || data[key].length === 0) {data[key] = "Unavailable"}}
             console.log(data);
             userAvatar.setAttribute("src", data.avatar_url);
             userName.innerHTML = data.name;
@@ -35,8 +33,7 @@ form.addEventListener('submit', function(event) {
             userRepos.innerHTML = `Public Repositories : ${data.public_repos}`;
             userBio.innerHTML = `Description : ${data.bio}`;
 
-            if (data.blog.value != "Un-available") {userBlog.innerHTML = `Website : <a href=${data.blog} target="_blank">${data.blog}</a>`;
+            if (data.blog.value != undefined) {userBlog.innerHTML = `Website : <a href=${data.blog} target="_blank">${data.blog}</a>`;
             } else {userBlog.innerHTML = `Website : ${data.blog}`}
         })
-    
 })
