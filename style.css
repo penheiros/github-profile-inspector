@@ -101,4 +101,5 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
     position:absolute;
     bottom: 0;
     color: white;
+    font-size: 12px;
 }
