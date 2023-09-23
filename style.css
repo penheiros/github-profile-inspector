@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(32, 38, 49) ;
 }
 
@@ -8,8 +8,8 @@ h1 {
     font-weight: 200;
     font-size: 25px;
     background-color: rgb(61, 95, 139); color: white;
-    padding: 15px 10px;
-    width: 350px;
+    padding: 15px 0;
+    width: 100%;
     margin: 0;
 }
 p {margin: 0; color: white;}
@@ -24,28 +24,27 @@ a {
     align-items: center;
     position: fixed;
     left:0; right:0; bottom:0; top: 0;
-    margin-bottom: 50px;
 } .box-container {
-    display: flex; justify-content: center; 
-    align-items: center;
+    display: flex; justify-content: center;
+    align-items: center; flex-direction: column;
     gap: 15px;
+    border: 5px solid rgb(61, 95, 139); padding:5px;
+    border-radius: 30px;
 }
 #github-profile-form {
     display: flex; flex-direction: column;
-    gap: 16px;
+    width: 100%;
 }
 #result-box {
-    margin-top: 304px;
     display: flex; flex-direction: column;
-    height: 500px;
+    width: 100%;
 }
 #result {
     background-color: rgb(53, 70, 92);
-    height: 96.8px;
-    padding: 20px;
-
+    height: 100%;
     display: flex; flex-direction: column;
-    gap: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #user-avatar {
     height: 40px;
@@ -54,7 +53,6 @@ a {
 }
 #user-name {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #user-profile-link {
     font-size: 15px;
@@ -65,31 +63,38 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
     width: 300px;
     line-height: 1.5;
 }
-
+.search-title {
+  border-top-right-radius: 20px;  
+  border-top-left-radius: 20px;
+  padding: 30px 0;
+}
 .userinfo {
     display: flex; flex-direction: row;
     align-items: center;
     gap: 15px;
+    padding: 15px;
 }
 .userdetails {
     display: flex; flex-direction: column;
     gap: 15px;
+    padding: 15px;
 }
 
 .search-box {
-    padding: 10px;
-    height: 30px;
-    width: 350px;
+    padding: 15px;
+    font-size: 20px;
     background-color: rgb(53, 70, 92); color: white;
     border: none;
+    text-align: center;
+    outline: none;
 }
+.search-box::placeholder{text-align: center;}
 .search-button {
     padding: 15px;
     font-size: 20px;
     background-color: rgb(64, 120, 192);
     border: none;
     color: white;
-    width: 370px;
     cursor: pointer;
     transition: background-color 0.25s;
 }
@@ -102,4 +107,29 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
     bottom: 0;
     color: white;
     font-size: 12px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1, .search-box,
+    .search-button {
+        font-size: 15px;
+    }
+
+    .copyright {font-size: 10px; padding: 0 50px;};
+    .box-container {
+        display: flex; justify-content: center;
+        align-items: center; flex-direction: column;
+        gap: 15px;
+        border: 1px solid white; padding:10px;
+        border-radius: 30px;
+        width: 70%;
+    }
+    .userdetails {
+        display: flex; flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        font-size:10px;
+    }
+    #user-bio {width:auto;}
 }
