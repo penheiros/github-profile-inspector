@@ -1,21 +1,23 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Arial;
     background-color: rgb(32, 38, 49) ;
 }
-
+:root {
+    --blue: rgb(61, 95, 139);
+    --darkblue: rgb(53, 70, 92);
+    --brightblue: rgb(84, 150, 237);
+}
 h1 {
     text-align: center;
     font-weight: 200;
-    font-size: 25px;
-    background-color: rgb(61, 95, 139); color: white;
+    background-color: var(--blue); color: white;
     padding: 15px 0;
     width: 100%;
     margin: 0;
-}
+}.search-title, .result-title {font-size: 20px;}
 p {margin: 0; color: white;}
 a {
-    color: rgb(84, 150, 237); 
-    text-decoration: underline rgba(0,0,0,0);
+    color: var(--brightblue); 
     transition: text-decoration-color .25s;
 }
 .container {
@@ -28,8 +30,7 @@ a {
     display: flex; justify-content: center;
     align-items: center; flex-direction: column;
     gap: 15px;
-    border: 5px solid rgb(61, 95, 139); padding:5px;
-    border-radius: 30px;
+    border: 5px solid var(--darkblue); padding:5px;
 }
 #github-profile-form {
     display: flex; flex-direction: column;
@@ -40,11 +41,10 @@ a {
     width: 100%;
 }
 #result {
-    background-color: rgb(53, 70, 92);
+    background-color: var(--darkblue);
     height: 100%;
     display: flex; flex-direction: column;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+
 }
 #user-avatar {
     height: 40px;
@@ -57,17 +57,15 @@ a {
 #user-profile-link {
     font-size: 15px;
 }
-a:hover {text-decoration: underline rgb(84, 150, 237);}
+a:hover {text-decoration: underline var(--brightblue);}
 
 #user-bio {
     width: 300px;
     line-height: 1.5;
 }
 .search-title {
-  border-top-right-radius: 20px;  
-  border-top-left-radius: 20px;
   padding: 30px 0;
-}
+} .result-title {text-align: left; padding: 15px; width: auto;}
 .userinfo {
     display: flex; flex-direction: row;
     align-items: center;
@@ -83,12 +81,12 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
 .search-box {
     padding: 15px;
     font-size: 20px;
-    background-color: rgb(53, 70, 92); color: white;
+    background-color: var(--darkblue); color: white;
     border: none;
     text-align: center;
     outline: none;
 }
-.search-box::placeholder{text-align: center;}
+.search-box::placeholder{text-align: left;}
 .search-button {
     padding: 15px;
     font-size: 20px;
@@ -97,16 +95,17 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
     color: white;
     cursor: pointer;
     transition: background-color 0.25s;
+    text-align: left;
 }
 .search-button:hover {
-    background-color: rgb(84, 150, 237);
+    background-color: var(--brightblue);
 }
 
 .copyright {
     position:absolute;
     bottom: 0;
     color: white;
-    font-size: 12px;
+    font-size: 1vh;
     margin-bottom: 30px;
 }
 
@@ -118,11 +117,6 @@ a:hover {text-decoration: underline rgb(84, 150, 237);}
 
     .copyright {font-size: 10px; padding: 0 50px;};
     .box-container {
-        display: flex; justify-content: center;
-        align-items: center; flex-direction: column;
-        gap: 15px;
-        border: 1px solid white; padding:10px;
-        border-radius: 30px;
         width: 70%;
     }
     .userdetails {
