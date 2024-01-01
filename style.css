@@ -33,7 +33,7 @@ a {
     border: 5px solid var(--darkblue); padding:5px;
 }
 #github-profile-form {
-    display: flex; flex-direction: column;
+    display: flex; flex-direction: row;
     width: 100%;
 }
 #result-box {
@@ -65,7 +65,7 @@ a:hover {text-decoration: underline var(--brightblue);}
 }
 .search-title {
   padding: 30px 0;
-} .result-title {text-align: left; padding: 15px; width: auto;}
+} .result-title {text-align: center; padding: 15px; width: auto;}
 .userinfo {
     display: flex; flex-direction: row;
     align-items: center;
@@ -83,22 +83,22 @@ a:hover {text-decoration: underline var(--brightblue);}
     font-size: 20px;
     background-color: var(--darkblue); color: white;
     border: none;
-    text-align: center;
     outline: none;
 }
 .search-box::placeholder{text-align: left;}
 .search-button {
-    padding: 15px;
+    padding: 0px;
+    width: 100%;
     font-size: 20px;
-    background-color: rgb(64, 120, 192);
+    background-color: var(--darkblue);
     border: none;
     color: white;
     cursor: pointer;
     transition: background-color 0.25s;
-    text-align: left;
 }
+.search-button svg {height: 30px;}
 .search-button:hover {
-    background-color: var(--brightblue);
+    background-color: var(--blue);
 }
 
 .copyright {
