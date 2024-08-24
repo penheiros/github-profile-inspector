@@ -1,6 +1,5 @@
 # GitHub Profile Inspector
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 
 ## Overview
 
@@ -17,7 +16,7 @@
 
 ## Demo
 
-[Click here to view a live demo of the application.](#)  
+[Click here to view a live demo of the application.](https://penheiros.github.io/github-profile-inspector/)  
 *Note: Replace this link with your live demo URL if available.*
 
 ## Installation
@@ -49,12 +48,6 @@ To run the GitHub Profile Inspector locally, follow these steps:
 
 - **Frontend:**
   - React.js
-  - Axios for API calls
-  - Chart.js for contribution graphs
-  - Bootstrap for styling
-
-- **Backend:**
-  - Node.js (if backend processing is required)
 
 - **APIs:**
   - GitHub REST API
@@ -81,13 +74,3 @@ We welcome contributions to improve this project. If you have a suggestion that 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- **Author:** Your Name  
-- **Email:** your.email@example.com  
-- **GitHub:** [yourusername](https://github.com/yourusername)
-
----
-
-Feel free to customize this template with the specific details of your project.
