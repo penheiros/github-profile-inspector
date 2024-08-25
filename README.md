@@ -14,6 +14,12 @@
 - **Starred Repositories:** View the repositories the user has starred.
 - **Mobile Responsive:** Optimized for both desktop and mobile devices.
 
+## How to Use
+
+1. Open the application in your web browser.
+2. Select the desired username from the type to search.
+3. The current details about the user under that username, if it exists, will display immediately.
+
 ## Demo
 
 [Click here to view a live demo of the application.](https://penheiros.github.io/github-profile-inspector/)  
