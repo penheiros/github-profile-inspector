@@ -17,7 +17,6 @@
 ## Demo
 
 [Click here to view a live demo of the application.](https://penheiros.github.io/github-profile-inspector/)  
-*Note: Replace this link with your live demo URL if available.*
 
 ## Installation
 
