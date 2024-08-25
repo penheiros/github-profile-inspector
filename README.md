@@ -17,15 +17,3 @@
 ## Demo
 
 [Click here to view a live demo of the application.](https://penheiros.github.io/github-profile-inspector/)  
-
-## Technologies Used
-
-- **Frontend:**
-  - React.js
-
-- **APIs:**
-  - GitHub REST API
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
