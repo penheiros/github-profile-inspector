@@ -18,31 +18,6 @@
 
 [Click here to view a live demo of the application.](https://penheiros.github.io/github-profile-inspector/)  
 
-## Installation
-
-To run the GitHub Profile Inspector locally, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/github-profile-inspector.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd github-profile-inspector
-   ```
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-4. **Create a `.env` file and add your GitHub API token:**
-   ```
-   REACT_APP_GITHUB_TOKEN=your_github_token_here
-   ```
-5. **Run the application:**
-   ```bash
-   npm start
-   ```
-
 ## Technologies Used
 
 - **Frontend:**
@@ -50,25 +25,6 @@ To run the GitHub Profile Inspector locally, follow these steps:
 
 - **APIs:**
   - GitHub REST API
-
-## Contributing
-
-We welcome contributions to improve this project. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-1. **Fork the repository.**
-2. **Create your feature branch:**
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. **Commit your changes:**
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-4. **Push to the branch:**
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. **Open a pull request.**
 
 ## License
 
