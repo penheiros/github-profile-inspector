@@ -121,6 +121,7 @@ a:hover {
   width: 23vw;
   font-size: 1.3rem;
   font-weight: 350;
+  color: rgb(196, 196, 196)
 }
 
 .search-title {
@@ -197,3 +198,21 @@ a:hover {
   width: auto;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+  #user-bio {
+    width: 70vw;
+  }
+  .box-container {
+    width: 75%;
+  }
+
+  .follow-container {
+    width: auto;
+  }
+
+  .follow-container p {
+    font-size: 1rem;
+  }
+}
